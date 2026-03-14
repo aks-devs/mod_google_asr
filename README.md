@@ -1,8 +1,7 @@
 <p>
   Google Speech-To-Text service for the Freeswitch. <br>
-  Features: vad, flexible adjustments. <br>
-  Available through: asr_interface, commnad api. <br>
-  A small installation guide can be found here: <a href="https://github.com/akscf/mod_openai_asr/issues/1">Fail to compile module</a>
+  Features: vad, cmd api, flexible settings. <br>
+  A small installation guide can be found here: <a href="https://github.com/aks-devs/mod_openai_asr/issues/1">Fail to compile module</a>
 </p>
 
 ### Usage example

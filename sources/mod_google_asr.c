@@ -15,14 +15,11 @@
  * License.
  *
  * Module Contributor(s):
- *  Konstantin Alexandrin <akscfx@gmail.com>
+ *  aks  https://akstel.org
  *
  *
  * Google Speech-To-Text service for the Freeswitch.
  * https://cloud.google.com/speech-to-text/docs/reference/rest
- *
- * Development repository:
- * https://github.com/akscf/mod_google_asr
  *
  */
 #include "mod_google_asr.h"
@@ -761,7 +758,9 @@ SWITCH_MODULE_LOAD_FUNCTION(mod_google_asr_load) {
     asr_interface->asr_load_grammar = asr_load_grammar;
     asr_interface->asr_unload_grammar = asr_unload_grammar;
 
-    switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_NOTICE, "Google-ASR (%s)\n", MOD_VERSION);
+    switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_NOTICE, "Google Speech-to-Text (%s)\n", MOD_VERSION);
+    switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_NOTICE, "(C)2025 akstel.org\n");
+
 out:
     if(xml) {
         switch_xml_free(xml);
