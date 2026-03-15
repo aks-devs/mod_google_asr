@@ -5,7 +5,7 @@
 </p>
 
 ### Usage example
-```
+```XML
 <extension name="asr-test">
   <condition field="destination_number" expression="^(3222)$">
     <action application="answer"/>
